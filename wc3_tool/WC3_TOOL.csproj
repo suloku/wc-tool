@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{1E65C335-2DE3-410B-B713-5F7B023106CD}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WC3_TOOL</RootNamespace>
+    <AssemblyName>WC3_TOOL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventTool.cs" />
+    <Compile Include="EventTool.Designer.cs">
+      <DependentUpon>EventTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs" />
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\Decor_editor.cs" />
+    <Compile Include="WC3\Decor_editor.Designer.cs">
+      <DependentUpon>Decor_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\ECB.cs" />
+    <Compile Include="WC3\ECB_editor.cs" />
+    <Compile Include="WC3\ECB_editor.Designer.cs">
+      <DependentUpon>ECB_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\ECT.cs" />
+    <Compile Include="WC3\ECT_editor.cs" />
+    <Compile Include="WC3\ECT_editor.Designer.cs">
+      <DependentUpon>ECT_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\ECT_editor_text.cs" />
+    <Compile Include="WC3\ECT_pkedit.cs" />
+    <Compile Include="WC3\ECT_pkedit.Designer.cs">
+      <DependentUpon>ECT_pkedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\ME3.cs" />
+    <Compile Include="WC3\ME3_editor.cs" />
+    <Compile Include="WC3\ME3_editor.Designer.cs">
+      <DependentUpon>ME3_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\PKHEX\PKM.cs" />
+    <Compile Include="WC3\SAV3.cs" />
+    <Compile Include="WC3\TV.cs" />
+    <Compile Include="WC3\TV_editor.cs" />
+    <Compile Include="WC3\TV_editor.Designer.cs">
+      <DependentUpon>TV_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\WC3_editor.cs" />
+    <Compile Include="WC3\WC3_editor.Designer.cs">
+      <DependentUpon>WC3_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WC3\FILEIO.cs" />
+    <Compile Include="WC3\wc3.cs" />
+    <Compile Include="WC3\WC3_editor_givegg.cs" />
+    <Compile Include="WC3\WC3_editor_givegg.Designer.cs">
+      <DependentUpon>WC3_editor_givegg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\WC3_editor_giveggExt.cs" />
+    <Compile Include="WC3\WC3_editor_giveggExt.Designer.cs">
+      <DependentUpon>WC3_editor_giveggExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WC3\WCN_editor.cs" />
+    <Compile Include="WC3\WCN_editor.Designer.cs">
+      <DependentUpon>WCN_editor.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WC3" />
+    <Folder Include="WC3\Image" />
+    <Folder Include="WC3\PKHEX" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EventTool.resx">
+      <DependentUpon>EventTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\Decor_editor.resx">
+      <DependentUpon>Decor_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\ECB_editor.resx">
+      <DependentUpon>ECB_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\ECT_editor.resx">
+      <DependentUpon>ECT_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\ECT_pkedit.resx">
+      <DependentUpon>ECT_pkedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\GiveEggOrg.resx" />
+    <EmbeddedResource Include="WC3\Image\Cards.resx" />
+    <EmbeddedResource Include="WC3\Image\Icons.resx" />
+    <EmbeddedResource Include="WC3\ME3_editor.resx">
+      <DependentUpon>ME3_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\Tickets.resx" />
+    <EmbeddedResource Include="WC3\TV_editor.resx">
+      <DependentUpon>TV_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\WC3_editor.resx">
+      <DependentUpon>WC3_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\WC3_editor_givegg.resx">
+      <DependentUpon>WC3_editor_givegg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\WC3_editor_giveggExt.resx">
+      <DependentUpon>WC3_editor_giveggExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WC3\WCN_editor.resx">
+      <DependentUpon>WCN_editor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

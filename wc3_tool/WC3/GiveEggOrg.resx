@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ROM_E_GiveEgg_Deu" type="System.Byte[], mscorlib">
+    <value>
+        uFleaAgr5AG7AGheaAgMJt1AhgAh3UAGALsBj15oCCnkAbqaXmgIalq9+l5oCGZtMXIBMmwCalq9oV9o
+        CGZtbAJ6rADN3UDS3UD/Id1AAQC7AdxeaAgh3UACALsB4l5oCCHdQAMAuwHoXmgIId1ABAC7Ae5eaAgh
+        3UAFALsB9F5oCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAO+1eLf2bgA2NXn5wDY6QDY1ecA
+        wb/Cv8PHrv7Bv829wr/Cv8gA1tni6eju6ADc1eforfvD4QDKycUbx8nIrr2/yM6/zADr1ebo2ej+2d3i
+        AMHZ59fc2eLfANXp2gDY3dfcrQC/3eL6ysnFG8fJyK6/w6v6vN3o6NkA6ObV3eLd2ebZANjV5wDKycUb
+        x8nI+uHd6ADG3dnW2QDp4tgAzePm29rV4Oit/8ncuADY6QDc1efoAN/Z3eLZ4gDK4NXo7gDd4gDY2d3i
+        2eH+ztnV4av6vN3o6NkA3+Ph4dkA693Z2NnmuADi1dfc2NnhANjp+tnd4gDKycUbx8nIANXp2gDZ3eLZ
+        4QDKvfrb2eDV29nm6ADc1eforf8=
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Eng" type="System.Byte[], mscorlib">
+    <value>
+        uD1NZwgr5AG7AExNZwgMJt1AhgAh3UAGALsBc01nCCnkAbp+TWcIalq93k1nCGZtMXIBMmwCalq9ak5n
+        CGZtbAJ6rADN3UDS3UD/Id1AAQC7AcBNZwgh3UACALsBxk1nCCHdQAMAuwHMTWcIId1ABAC7AdJNZwgh
+        3UAFALsB2E1nCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAPO3NXi3wDt4+kA2uPmAOnn3eLb
+        AOjc2QDH083Ov8zT/sHDwM4Aze3n6NnhrfvA5uPhAOjc2QDKycUbx8nIAL2/yM6/zADr2f7c1erZANUA
+        293a6K6u1QDKycUbx8nIAL/Bwav7yuDZ1efZAObV3efZAN3oAOvd6NwA4OPq2QDV4tj+393i2OLZ5+et
+        /8ncuADt4+nmAOTV5ujtANXk5NnV5ucA6OMA1tkA2ung4K37yuDZ1efZANfj4dkA59nZAOHZANXa6Nnm
+        AOfo4+bd4tv+1QDKycUbx8nIAOPiANUAyr2t/w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Esp" type="System.Byte[], mscorlib">
+    <value>
+        uINyZwgr5AG7AJJyZwgMJt1AhgAh3UAGALsBuXJnCCnkAbrEcmcIalq9JHNnCGZtMXIBMmwCalq9rHNn
+        CGZtbAJ6rADN3UDS3UD/Id1AAQC7AQZzZwgh3UACALsBDHNnCCHdQAMAuwESc2cIId1ABAC7ARhzZwgh
+        3UAFALsBHnNnCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAPB5tXX3dXnAOTj5gDp59XmANng
+        AOfd5+jZ4dX+2NngAMy/wbvGyQDHw83Ov8zDyc3JrfvO2eLZ4ePnAOniAMy/wbvGyQDY2eAAvb/IzszJ
+        /srJxRvHycjwAFLp4gDCz7/QyQDKycUbx8nIq/u96W/Y1eDjANfj4gDo1dfo4wDtANfV5t0p463/ytXm
+        2dfZAOXp2QDo6QDZ5end5OMA2efoF/7X4+Hk4Nno46370OnZ4OrZANfp1eLY4wDY2d7Z5wDV4Nsn4gDK
+        ycUbx8nI/tniANngAMq9rf8=
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Fre" type="System.Byte[], mscorlib">
+    <value>
+        uMKMZwgr5AG7ANGMZwgMJt1AhgAh3UAGALsB+IxnCCnkAboDjWcIalq9Y41nCGZtMXIBMmwCalq9z41n
+        CGZtbAJ6rADN3UDS3UD/Id1AAQC7AUWNZwgh3UACALsBS41nCCHdQAMAuwFRjWcIId1ABAC7AVeNZwgh
+        3UAFALsBXY1nCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAPH2ebX3QDYtOno3eDd59nmAODZ
+        AOft5+ga4dn+vbu+v7vPAMfTzc6t+8jj6ecA1erj4ucA6eIAyb/PwADk4+nmAOrj6eer+7/g2erZ7q7g
+        2QDV6tnXANXh4+nmANno/tvZ4ujd4ODZ5+fZrf/J3LgA4LQb5end5NkA2efoAOTg2d3i2a37zNnq2eLZ
+        7gDl6dXi2ADq4+nnANXp5tnuAObV4tsb/uniAMrJxRvHycgA2NXi5wDq4+jm2QDKva3/
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Ita" type="System.Byte[], mscorlib">
+    <value>
+        uPUTZwgr5AG7AAQUZwgMJt1AhgAh3UAGALsBKxRnCCnkAbo2FGcIalq9lhRnCGZtMXIBMmwCalq9GhVn
+        CGZtbAJ6rADN3UDS3UD/Id1AAQC7AXgUZwgh3UACALsBfhRnCCHdQAMAuwGEFGcIId1ABAC7AYoUZwgh
+        3UAFALsBkBRnCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAPB5tXu3dkA5NnmAOnn1ebZAN3g
+        AM3d5+jZ4dX+vsnIyQDNv8HMv87Jrfu71tbd1eHjAOniAObZ29Xg4wDk2eYA6NkA2NUA6eL+vb/IzszJ
+        AMrJxRvHyci4AOniAM/J0MkAysnFG8fJyKv7zubV6OjV4OMA1+PiAOjV4ujjANXh4+bZq//I4+IA3NXd
+        AOTdJgDk4+fo4wDi2eDg1QDo6dX+5+Xp1djm1a37zuPm4tUA1QDo5uPq1ebh3QDY4+TjANXq2eb+2Nnk
+        4+fd6NXo4wDp4uMA4wDk3Sb6ysnFG8fJyADi2eAAyr2t/w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Jap" type="System.Byte[], mscorlib">
+    <value>
+        uF/MXwgr5AG7AG7MXwgMJt1AgwAh3UAGALsBlcxfCCnkAbqgzF8Ialq9AM1fCGZtMXIBMmwCalq9Xs1f
+        CGZtbAJ6rADN3UDS3UD/Id1AAQC7AeLMXwgh3UACALsB6MxfCCHdQAMAuwHuzF8IId1ABAC7AfTMXwgh
+        3UAFALsB+sxfCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAMcDDgVBQgoIxkALQA7KCYD/gIQ
+        QQcAASg3FAMAOzwCHw2r+0UDQACfWXN+Xn5grgAGJ/4KGQCfWXN+GQAQHzst+p16j35kAAIQDB8Nq/tB
+        Aj0WAA9BExP+CEELAqv/BSQAEyMRN/4CUEsCGQAmA0QNGPufWXN+LQCbX1p+FgABPgkTBif+IwMCEUUA
+        BQoMCEELAv8=
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Deu" type="System.Byte[], mscorlib">
+    <value>
+        uA10SAgr2AO7ABx0SAgMJrVAgwAhtUAGALsBQ3RICCnYA7pOdEgIalq9rnRICGZtMQIBMmwCalq9VXVI
+        CGZtbAJ6rADNtUDStUD/IbVAAQC7AZB0SAghtUACALsBlnRICCG1QAMAuwGcdEgIIbVABAC7AaJ0SAgh
+        tUAFALsBqHRICAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAO+1eLf2bgA2NXn5wDY6QDY1ecA
+        wb/Cv8PHrv7Bv829wr/Cv8gA1tni6eju6ADc1eforfvD4QDKycUbx8nIrr2/yM6/zADr1ebo2ej+2d3i
+        AMHZ59fc2eLfANXp2gDY3dfcrQC/3eL6ysnFG8fJyK6/w6v6vN3o6NkA6ObV3eLd2ebZANjV5wDKycUb
+        x8nI+uHd6ADG3dnW2QDp4tgAzePm29rV4Oit/8ncuADY6QDc1efoAN/Z3eLZ4gDK4NXo7gDd4gDY2d3i
+        2eH+ztnV4av6vN3o6NkA3+Ph4dkA693Z2NnmuADi1dfc2NnhANjp+tnd4gDKycUbx8nIANXp2gDZ3eLZ
+        4QDKvfrb2eDV29nm6ADc1eforf8=
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Eng" type="System.Byte[], mscorlib">
+    <value>
+        uBWPSAgr2AO7ACSPSAgMJrVAgwAhtUAGALsBS49ICCnYA7pWj0gIalq9to9ICGZtMQIBMmwCalq9Q5BI
+        CGZtbAJ6rADNtUDStUD/IbVAAQC7AZiPSAghtUACALsBno9ICCG1QAMAuwGkj0gIIbVABAC7AaqPSAgh
+        tUAFALsBsI9ICAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAPO3NXi3wDt4+kA2uPmAOnn3eLb
+        AOjc2QDH083Ov8zT/sHDwM4Aze3n6NnhrfvA5uPhAOjc2QDKycUbx8nIAL2/yM6/zADr2f7c1erZANUA
+        293a6ACuANUAysnFG8fJyAC/wcGr+8rg2dXn2QDm1d3n2QDd6ADr3ejcAODj6tkA1eLY/t/d4tji2efn
+        rf/J3LgA7ePp5gDk1ebo7QDV5OTZ1ebnAOjjANbZANrp4OCt+8rg2dXn2QDX4+HZAOfZ2QDh2QDV2ujZ
+        5gDn6OPm3eLb/tUAysnFG8fJyADj4gDVAMq9rf8=
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Esp" type="System.Byte[], mscorlib">
+    <value>
+        uEv3Rwgr2AO7AFr3RwgMJrVAgwAhtUAGALsBgfdHCCnYA7qM90cIalq97PdHCGZtMQIBMmwCalq9dPhH
+        CGZtbAJ6rADNtUDStUD/IbVAAQC7Ac73RwghtUACALsB1PdHCCG1QAMAuwHa90cIIbVABAC7AeD3Rwgh
+        tUAFALsB5vdHCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAPB5tXX3dXnAOTj5gDp59XmANng
+        AOfd5+jZ4dX+2NngAMy/wbvGyQDHw83Ov8zDyc3JrfvO2eLZ4ePnAOniAMy/wbvGyQDY2eAAvb/IzszJ
+        /srJxRvHycjwAFLp4gDCz7/QyQDKycUbx8nIq/u96W/Y1eDjANfj4gDo1dfo4wDtANfV5t0p463/ytXm
+        2dfZAOXp2QDo6QDZ5end5OMA2efoF/7X4+Hk4Nno46370OnZ4OrZANfp1eLY4wDY2d7Z5wDV4Nsn4gDK
+        ycUbx8nI/tniANngAMq9rf8=
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Fre" type="System.Byte[], mscorlib">
+    <value>
+        uObvRwgr2AO7APXvRwgMJrVAgwAhtUAGALsBHPBHCCnYA7on8EcIalq9h/BHCGZtMQIBMmwCalq98/BH
+        CGZtbAJ6rADNtUDStUD/IbVAAQC7AWnwRwghtUACALsBb/BHCCG1QAMAuwF18EcIIbVABAC7AXvwRwgh
+        tUAFALsBgfBHCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAPH2ebX3QDYtOno3eDd59nmAODZ
+        AOft5+ga4dn+vbu+v7vPAMfTzc6t+8jj6ecA1erj4ucA6eIAyb/PwADk4+nmAOrj6eer+7/g2erZ7q7g
+        2QDV6tnXANXh4+nmANno/tvZ4ujd4ODZ5+fZrf/J3LgA4LQb5end5NkA2efoAOTg2d3i2a37zNnq2eLZ
+        7gDl6dXi2ADq4+nnANXp5tnuAObV4tsb/uniAMrJxRvHycgA2NXi5wDq4+jm2QDKva3/
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Ita" type="System.Byte[], mscorlib">
+    <value>
+        uH3JRwgr2AO7AIzJRwgMJrVAgwAhtUAGALsBs8lHCCnYA7q+yUcIalq9HspHCGZtMQIBMmwCalq9ospH
+        CGZtbAJ6rADNtUDStUD/IbVAAQC7AQDKRwghtUACALsBBspHCCG1QAMAuwEMykcIIbVABAC7ARLKRwgh
+        tUAFALsBGMpHCAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAPB5tXu3dkA5NnmAOnn1ebZAN3g
+        AM3d5+jZ4dX+vsnIyQDNv8HMv87Jrfu71tbd1eHjAOniAObZ29Xg4wDk2eYA6NkA2NUA6eL+vb/IzszJ
+        AMrJxRvHyci4AOniAM/J0MkAysnFG8fJyKv7zubV6OjV4OMA1+PiAOjV4ujjANXh4+bZq//I4+IA3NXd
+        AOTdJgDk4+fo4wDi2eDg1QDo6dX+5+Xp1djm1a37zuPm4tUA1QDo5uPq1ebh3QDY4+TjANXq2eb+2Nnk
+        4+fd6NXo4wDp4uMA4wDk3Sb6ysnFG8fJyADi2eAAyr2t/w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Jap" type="System.Byte[], mscorlib">
+    <value>
+        uEeWRAgr2AO7AFaWRAgMJrVAgwAhtUAGALsBfZZECCnYA7qIlkQIalq96JZECGZtMQIBMmwCalq9RpdE
+        CGZtbAJ6rADNtUDStUD/IbVAAQC7AcqWRAghtUACALsB0JZECCG1QAMAuwHWlkQIIbVABAC7AdyWRAgh
+        tUAFALsB4pZECAN7AQI5AAN7AgI5AAN7AwI5AAN7BAI5AAN7BQI5AAMcDDgVBQgoIxkALQA7KCYD/gIQ
+        QQcAASg3FAMAOzwCHw2r+0UDQACfWXN+Xn5grgAGJ/4KGQCfWXN+GQAQHzst+p16j35kAAIQDB8Nq/tB
+        Aj0WAA9BExP+CEELAqv/BSQAEyMRN/4CUEsCGQAmA0QNGPufWXN+LQCbX1p+FgABPgkTBif+IwMCEUUA
+        BQoMCEELAv8=
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Deu_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK+QBuwA7AAAIDCbdQIYAId1ABgC7AWMAAAgp5AG6bwAACGpavbgEAAAIK+QBuwBlAAAI
+        DCbdQIYAId1ABgC7AY0AAAgp5AG6mQAACGpavUoBAAhmbTFyATJsAv8m3UCGACHdQAYAuwGNAAAIKeQB
+        upkAAAhqWr1KAQAIZm0xcgEybAL/alq98wEACGZtbAL/eqwAzd1A0t1A/yHdQAEAuwHcAAAIId1AAgC7
+        AfIAAAgh3UADALsBCAEACCHdQAQAuwEeAQAIId1ABQC7ATQBAAgD/3sBADcAewEBOAB7AQI5AHsBAzoA
+        A/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7BAI5
+        AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/vtXi39m4ANjV5+cA2OkA2NXnAMG/wr/Dx67+wb/N
+        vcK/wr/IANbZ4uno7ugA3NXn6K37w+EAysnFG8fJyK69v8jOv8wA69Xm6Nno/tnd4gDB2efX3Nni3wDV
+        6doA2N3X3K0Av93i+srJxRvHyciuv8Or+rzd6OjZAOjm1d3i3dnm2QDY1ecAysnFG8fJyPrh3egAxt3Z
+        1tkA6eLYAM3j5tva1eDorf8A/8ncuADY6QDc1efoAN/Z3eLZ4gDK4NXo7gDd4gDY2d3i2eH+ztnV4av6
+        vN3o6NkA3+Ph4dkA693Z2NnmuADi1dfc2NnhANjp+tnd4gDKycUbx8nIANXp2gDZ3eLZ4QDKvfrb2eDV
+        29nm6ADc1eforf8A////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Deu_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCbdQIYAId1ABgC7AVQAAAi6YAAACGpavREBAAhmbTFyATJsDf8m3UCGACHdQAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xcgEybA3/alq9ugEACGZtbAL/eqwAzd1A0t1A/yHdQAEAuwGjAAAIId1A
+        AgC7AbkAAAgh3UADALsBzwAACCHdQAQAuwHlAAAIId1ABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/vtXi39m4ANjV5+cA2OkA2NXnAMG/wr/Dx67+
+        wb/NvcK/wr/IANbZ4uno7ugA3NXn6K37w+EAysnFG8fJyK69v8jOv8wA69Xm6Nno/tnd4gDB2efX3Nni
+        3wDV6doA2N3X3K0Av93i+srJxRvHyciuv8Or+rzd6OjZAOjm1d3i3dnm2QDY1ecAysnFG8fJyPrh3egA
+        xt3Z1tkA6eLYAM3j5tva1eDorf8A/8ncuADY6QDc1efoAN/Z3eLZ4gDK4NXo7gDd4gDY2d3i2eH+ztnV
+        4av6vN3o6NkA3+Ph4dkA693Z2NnmuADi1dfc2NnhANjp+tnd4gDKycUbx8nIANXp2gDZ3eLZ4QDKvfrb
+        2eDV29nm6ADc1eforf8A////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Eng_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK+QBuwA7AAAIDCbdQIYAId1ABgC7AWMAAAgp5AG6bwAACGpavSABAAhmbTFyATJsAv8m
+        3UCGACHdQAYAuwFjAAAIKeQBum8AAAhqWr0gAQAIZm0xcgEybAL/alq9rwEACGZtbAL/eqwAzd1A0t1A
+        /yHdQAEAuwGyAAAIId1AAgC7AcgAAAgh3UADALsB3gAACCHdQAQAuwH0AAAIId1ABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/ztzV4t8A7ePpANrj
+        5gDp593i2wDo3NkAx9PNzr/M0/7Bw8DOAM3t5+jZ4a37wObj4QDo3NkAysnFG8fJyAC9v8jOv8wA69n+
+        3NXq2QDVANvd2ugArgDVAMrJxRvHycgAv8HBq/vK4NnV59kA5tXd59kA3egA693o3ADg4+rZANXi2P7f
+        3eLY4tnn563/AP/J3LgA7ePp5gDk1ebo7QDV5OTZ1ebnAOjjANbZANrp4OCt+8rg2dXn2QDX4+HZAOfZ
+        2QDh2QDV2ujZ5gDn6OPm3eLb/tUAysnFG8fJyADj4gDVAMq9rf8A////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Eng_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCbdQIYAId1ABgC7AVQAAAi6YAAACGpavREBAAhmbTFyATJsDf8m3UCGACHdQAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xcgEybA3/alq9mwEACGZtbAL/eqwAzd1A0t1A/yHdQAEAuwGjAAAIId1A
+        AgC7AbkAAAgh3UADALsBzwAACCHdQAQAuwHlAAAIId1ABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV193V5wDk4+YA6efV5gDZ4ADn3efo2eHV
+        /tjZ4ADMv8G7xskAx8PNzr/Mw8nNya37ztni2eHj5wDp4gDMv8G7xskA2NngAL2/yM7Myf7KycUbx8nI
+        8ABS6eIAws+/0MkAysnFG8fJyKv7velv2NXg4wDX4+IA6NXX6OMA7QDX1ebdKeOt/wD/ytXm2dfZAOXp
+        2QDo6QDZ5end5OMA2efoF/7X4+Hk4Nno46370OnZ4OrZANfp1eLY4wDY2d7Z5wDV4Nsn4gDKycUbx8nI
+        /tniANngAMq9rf8AuAQAAAgMJt1AhgAh3UAGALsBPAIACLpIAgAIalq9+QIACGZtMXIBMmwN/ybdQIYA
+        Id1ABgC7ATwCAAi6SAIACGpavfkCAAhmbTFyATJsDf9qWr2IAwAIZm1sAv96rADN3UDS3UD/Id1AAQC7
+        AYsCAAgh3UACALsBoQIACCHdQAMAuwG3AgAIId1ABAC7Ac0CAAgh3UAFALsB4wIACAP/ewEANwB7AQE4
+        AHsBAjkAewEDOgAD/3sCADcAewIBOAB7AgI5AHsCAzoAA/97AwA3AHsDATgAewMCOQB7AwM6AAP/ewQA
+        NwB7BAE4AHsEAjkAewQDOgAD/3sFADcAewUBOAB7BQI5AHsFAzoAA//O3NXi3wDt4+kA2uPmAOnn3eLb
+        AOjc2QDH083Ov8zT/sHDwM4Aze3n6NnhrfvA5uPhAOjc2QDKycUbx8nIAL2/yM6/zADr2f7c1erZANUA
+        293a6ACuANUAysnFG8fJyAC/wcGr+8rg2dXn2QDm1d3n2QDd6ADr3ejcAODj6tkA1eLY/t/d4tji2efn
+        rf8A/8ncuADt4+nmAOTV5ujtANXk5NnV5ucA6OMA1tkA2ung4K37yuDZ1efZANfj4dkA59nZAOHZANXa
+        6NnmAOfo4+bd4tv+1QDKycUbx8nIAOPiANUAyr2t/wD//////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Esp_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK+QBuwA7AAAIDCbdQIYAId1ABgC7AWMAAAgp5AG6bwAACGpavSABAAhmbTFyATJsAv8m
+        3UCGACHdQAYAuwFjAAAIKeQBum8AAAhqWr0gAQAIZm0xcgEybAL/alq9qgEACGZtbAL/eqwAzd1A0t1A
+        /yHdQAEAuwGyAAAIId1AAgC7AcgAAAgh3UADALsB3gAACCHdQAQAuwH0AAAIId1ABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV193V5wDk4+YA
+        6efV5gDZ4ADn3efo2eHV/tjZ4ADMv8G7xskAx8PNzr/Mw8nNya37ztni2eHj5wDp4gDMv8G7xskA2Nng
+        AL2/yM7Myf7KycUbx8nI8ABS6eIAws+/0MkAysnFG8fJyKv7velv2NXg4wDX4+IA6NXX6OMA7QDX1ebd
+        KeOt/wD/ytXm2dfZAOXp2QDo6QDZ5end5OMA2efoF/7X4+Hk4Nno46370OnZ4OrZANfp1eLY4wDY2d7Z
+        5wDV4Nsn4gDKycUbx8nI/tniANngAMq9rf8A////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Esp_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCbdQIYAId1ABgC7AVQAAAi6YAAACGpavREBAAhmbTFyATJsDf8m3UCGACHdQAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xcgEybA3/alq9mwEACGZtbAL/eqwAzd1A0t1A/yHdQAEAuwGjAAAIId1A
+        AgC7AbkAAAgh3UADALsBzwAACCHdQAQAuwHlAAAIId1ABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV193V5wDk4+YA6efV5gDZ4ADn3efo2eHV
+        /tjZ4ADMv8G7xskAx8PNzr/Mw8nNya37ztni2eHj5wDp4gDMv8G7xskA2NngAL2/yM7Myf7KycUbx8nI
+        8ABS6eIAws+/0MkAysnFG8fJyKv7velv2NXg4wDX4+IA6NXX6OMA7QDX1ebdKeOt/wD/ytXm2dfZAOXp
+        2QDo6QDZ5end5OMA2efoF/7X4+Hk4Nno46370OnZ4OrZANfp1eLY4wDY2d7Z5wDV4Nsn4gDKycUbx8nI
+        /tniANngAMq9rf8A////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Fre_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK+QBuwA7AAAIDCbdQIYAId1ABgC7AWMAAAgp5AG6bwAACGpavSABAAhmbTFyATJsAv8m
+        3UCGACHdQAYAuwFjAAAIKeQBum8AAAhqWr0gAQAIZm0xcgEybAL/alq9jgEACGZtbAL/eqwAzd1A0t1A
+        /yHdQAEAuwGyAAAIId1AAgC7AcgAAAgh3UADALsB3gAACCHdQAQAuwH0AAAIId1ABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/x9nm190A2LTp6N3g
+        3efZ5gDg2QDn7efoGuHZ/r27vr+7zwDH083OrfvI4+nnANXq4+LnAOniAMm/z8AA5OPp5gDq4+nnq/u/
+        4Nnq2e6u4NkA1erZ1wDV4ePp5gDZ6P7b2eLo3eDg2efn2a3/AP/J3LgA4LQb5end5NkA2efoAOTg2d3i
+        2a37zNnq2eLZ7gDl6dXi2ADq4+nnANXp5tnuAObV4tsb/uniAMrJxRvHycgA2NXi5wDq4+jm2QDKva3/
+        AP//////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Fre_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCbdQIYAId1ABgC7AVQAAAi6YAAACGpavREBAAhmbTFyATJsDf8m3UCGACHdQAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xcgEybA3/alq9fwEACGZtbAL/eqwAzd1A0t1A/yHdQAEAuwGjAAAIId1A
+        AgC7AbkAAAgh3UADALsBzwAACCHdQAQAuwHlAAAIId1ABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/x9nm190A2LTp6N3g3efZ5gDg2QDn7efoGuHZ
+        /r27vr+7zwDH083OrfvI4+nnANXq4+LnAOniAMm/z8AA5OPp5gDq4+nnq/u/4Nnq2e6u4NkA1erZ1wDV
+        4ePp5gDZ6P7b2eLo3eDg2efn2a3/AP/J3LgA4LQb5end5NkA2efoAOTg2d3i2a37zNnq2eLZ7gDl6dXi
+        2ADq4+nnANXp5tnuAObV4tsb/uniAMrJxRvHycgA2NXi5wDq4+jm2QDKva3/AP//////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Ita_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK+QBuwA7AAAIDCbdQIYAId1ABgC7AWMAAAgp5AG6bwAACGpavSABAAhmbTFyATJsAv8m
+        3UCGACHdQAYAuwFjAAAIKeQBum8AAAhqWr0gAQAIZm0xcgEybAL/alq9pgEACGZtbAL/eqwAzd1A0t1A
+        /yHdQAEAuwGyAAAIId1AAgC7AcgAAAgh3UADALsB3gAACCHdQAQAuwH0AAAIId1ABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV7t3ZAOTZ5gDp
+        59Xm2QDd4ADN3efo2eHV/r7JyMkAzb/BzL/Oya37u9bW3dXh4wDp4gDm2dvV4OMA5NnmAOjZANjVAOni
+        /r2/yM7MyQDKycUbx8nIuADp4gDPydDJAMrJxRvHycir+87m1ejo1eDjANfj4gDo1eLo4wDV4ePm2av/
+        AP/I4+IA3NXdAOTdJgDk4+fo4wDi2eDg1QDo6dX+5+Xp1djm1a37zuPm4tUA1QDo5uPq1ebh3QDY4+Tj
+        ANXq2eb+2Nnk4+fd6NXo4wDp4uMA4wDk3Sb6ysnFG8fJyADi2eAAyr2t/wD/////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Ita_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCbdQIYAId1ABgC7AVQAAAi6YAAACGpavREBAAhmbTFyATJsDf8m3UCGACHdQAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xcgEybA3/alq9lwEACGZtbAL/eqwAzd1A0t1A/yHdQAEAuwGjAAAIId1A
+        AgC7AbkAAAgh3UADALsBzwAACCHdQAQAuwHlAAAIId1ABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV7t3ZAOTZ5gDp59Xm2QDd4ADN3efo2eHV
+        /r7JyMkAzb/BzL/Oya37u9bW3dXh4wDp4gDm2dvV4OMA5NnmAOjZANjVAOni/r2/yM7MyQDKycUbx8nI
+        uADp4gDPydDJAMrJxRvHycir+87m1ejo1eDjANfj4gDo1eLo4wDV4ePm2av/AP/I4+IA3NXdAOTdJgDk
+        4+fo4wDi2eDg1QDo6dX+5+Xp1djm1a37zuPm4tUA1QDo5uPq1ebh3QDY4+TjANXq2eb+2Nnk4+fd6NXo
+        4wDp4uMA4wDk3Sb6ysnFG8fJyADi2eAAyr2t/wD/////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Jap_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK+QBuwA7AAAIDCbdQIYAId1ABgC7AWMAAAgp5AG6bwAACGpavSABAAhmbTFyATJsAv8m
+        3UCGACHdQAYAuwFjAAAIKeQBum8AAAhqWr0gAQAIZm0xcgEybAL/alq9pgEACGZtbAL/eqwAzd1A0t1A
+        /yHdQAEAuwGyAAAIId1AAgC7AcgAAAgh3UADALsB3gAACCHdQAQAuwH0AAAIId1ABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/HAw4FQUIKCMZAC0A
+        OygmA/4CEEEHAAEoNxQDADs8Ah8Nq/tFA0AAn1lzfl5+YK4ABif+ChkAn1lzfhkAEB87Lfqdeo9+ZAAC
+        EAwfDav7QQI9FgAPQRMT/ghBCwKr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAFJAATIxE3/gJQSwIZACYDRA0Y+59Zc34tAJtfWn4WAAE+CRMGJ/4jAwIRRQAFCgwIQQsC/wAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_E_GiveEgg_Jap_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCbdQIYAId1ABgC7AVQAAAi6YAAACGpavREBAAhmbTFyATJsDf8m3UCGACHdQAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xcgEybA3/alq9lwEACGZtbAL/eqwAzd1A0t1A/yHdQAEAuwGjAAAIId1A
+        AgC7AbkAAAgh3UADALsBzwAACCHdQAQAuwHlAAAIId1ABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/HAw4FQUIKCMZAC0AOygmA/4CEEEHAAEoNxQD
+        ADs8Ah8Nq/tFA0AAn1lzfl5+YK4ABif+ChkAn1lzfhkAEB87Lfqdeo9+ZAACEAwfDav7QQI9FgAPQRMT
+        /ghBCwKr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFJAATIxE3/gJQSwIZ
+        ACYDRA0Y+59Zc34tAJtfWn4WAAE+CRMGJ/4jAwIRRQAFCgwIQQsC/wAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Deu_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK9gDuwA7AAAIDCa1QIMAIbVABgC7AWMAAAgp2AO6bwAACGpavSABAAhmbTECATJsAv8m
+        tUCDACG1QAYAuwFjAAAIKdgDum8AAAhqWr0gAQAIZm0xAgEybAL/alq9yQEACGZtbAL/eqwAzbVA0rVA
+        /yG1QAEAuwGyAAAIIbVAAgC7AcgAAAghtUADALsB3gAACCG1QAQAuwH0AAAIIbVABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/vtXi39m4ANjV5+cA
+        2OkA2NXnAMG/wr/Dx67+wb/NvcK/wr/IANbZ4uno7ugA3NXn6K37w+EAysnFG8fJyK69v8jOv8wA69Xm
+        6Nno/tnd4gDB2efX3Nni3wDV6doA2N3X3K0Av93i+srJxRvHyciuv8Or+rzd6OjZAOjm1d3i3dnm2QDY
+        1ecAysnFG8fJyPrh3egAxt3Z1tkA6eLYAM3j5tva1eDorf8A/8ncuADY6QDc1efoAN/Z3eLZ4gDK4NXo
+        7gDd4gDY2d3i2eH+ztnV4av6vN3o6NkA3+Ph4dkA693Z2NnmuADi1dfc2NnhANjp+tnd4gDKycUbx8nI
+        ANXp2gDZ3eLZ4QDKvfrb2eDV29nm6ADc1eforf8A////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Deu_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCa1QIMAIbVABgC7AVQAAAi6YAAACGpavREBAAhmbTECATJsDf8mtUCDACG1QAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xAgEybA3/alq9ugEACGZtbAL/eqwAzbVA0rVA/yG1QAEAuwGjAAAIIbVA
+        AgC7AbkAAAghtUADALsBzwAACCG1QAQAuwHlAAAIIbVABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/vtXi39m4ANjV5+cA2OkA2NXnAMG/wr/Dx67+
+        wb/NvcK/wr/IANbZ4uno7ugA3NXn6K37w+EAysnFG8fJyK69v8jOv8wA69Xm6Nno/tnd4gDB2efX3Nni
+        3wDV6doA2N3X3K0Av93i+srJxRvHyciuv8Or+rzd6OjZAOjm1d3i3dnm2QDY1ecAysnFG8fJyPrh3egA
+        xt3Z1tkA6eLYAM3j5tva1eDorf8A/8ncuADY6QDc1efoAN/Z3eLZ4gDK4NXo7gDd4gDY2d3i2eH+ztnV
+        4av6vN3o6NkA3+Ph4dkA693Z2NnmuADi1dfc2NnhANjp+tnd4gDKycUbx8nIANXp2gDZ3eLZ4QDKvfrb
+        2eDV29nm6ADc1eforf8A////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Eng_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK9gDuwA7AAAIDCa1QIMAIbVABgC7AWMAAAgp2AO6bwAACGpavSABAAhmbTECATJsAv8m
+        tUCDACG1QAYAuwFjAAAIKdgDum8AAAhqWr0gAQAIZm0xAgEybAL/alq9rwEACGZtbAL/eqwAzbVA0rVA
+        /yG1QAEAuwGyAAAIIbVAAgC7AcgAAAghtUADALsB3gAACCG1QAQAuwH0AAAIIbVABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/ztzV4t8A7ePpANrj
+        5gDp593i2wDo3NkAx9PNzr/M0/7Bw8DOAM3t5+jZ4a37wObj4QDo3NkAysnFG8fJyAC9v8jOv8wA69n+
+        3NXq2QDVANvd2ugArgDVAMrJxRvHycgAv8HBq/vK4NnV59kA5tXd59kA3egA693o3ADg4+rZANXi2P7f
+        3eLY4tnn563/AP/J3LgA7ePp5gDk1ebo7QDV5OTZ1ebnAOjjANbZANrp4OCt+8rg2dXn2QDX4+HZAOfZ
+        2QDh2QDV2ujZ5gDn6OPm3eLb/tUAysnFG8fJyADj4gDVAMq9rf8A////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Eng_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCa1QIMAIbVABgC7AVQAAAi6YAAACGpavREBAAhmbTECATJsDf8mtUCDACG1QAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xAgEybA3/alq9oAEACGZtbAL/eqwAzbVA0rVA/yG1QAEAuwGjAAAIIbVA
+        AgC7AbkAAAghtUADALsBzwAACCG1QAQAuwHlAAAIIbVABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/ztzV4t8A7ePpANrj5gDp593i2wDo3NkAx9PN
+        zr/M0/7Bw8DOAM3t5+jZ4a37wObj4QDo3NkAysnFG8fJyAC9v8jOv8wA69n+3NXq2QDVANvd2ugArgDV
+        AMrJxRvHycgAv8HBq/vK4NnV59kA5tXd59kA3egA693o3ADg4+rZANXi2P7f3eLY4tnn563/AP/J3LgA
+        7ePp5gDk1ebo7QDV5OTZ1ebnAOjjANbZANrp4OCt+8rg2dXn2QDX4+HZAOfZ2QDh2QDV2ujZ5gDn6OPm
+        3eLb/tUAysnFG8fJyADj4gDVAMq9rf8A////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Esp_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK9gDuwA7AAAIDCa1QIMAIbVABgC7AWMAAAgp2AO6bwAACGpavSABAAhmbTECATJsAv8m
+        tUCDACG1QAYAuwFjAAAIKdgDum8AAAhqWr0gAQAIZm0xAgEybAL/alq9qgEACGZtbAL/eqwAzbVA0rVA
+        /yG1QAEAuwGyAAAIIbVAAgC7AcgAAAghtUADALsB3gAACCG1QAQAuwH0AAAIIbVABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV193V5wDk4+YA
+        6efV5gDZ4ADn3efo2eHV/tjZ4ADMv8G7xskAx8PNzr/Mw8nNya37ztni2eHj5wDp4gDMv8G7xskA2Nng
+        AL2/yM7Myf7KycUbx8nI8ABS6eIAws+/0MkAysnFG8fJyKv7velv2NXg4wDX4+IA6NXX6OMA7QDX1ebd
+        KeOt/wD/ytXm2dfZAOXp2QDo6QDZ5end5OMA2efoF/7X4+Hk4Nno46370OnZ4OrZANfp1eLY4wDY2d7Z
+        5wDV4Nsn4gDKycUbx8nI/tniANngAMq9rf8A////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Esp_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCa1QIMAIbVABgC7AVQAAAi6YAAACGpavREBAAhmbTECATJsDf8mtUCDACG1QAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xAgEybA3/alq9mwEACGZtbAL/eqwAzbVA0rVA/yG1QAEAuwGjAAAIIbVA
+        AgC7AbkAAAghtUADALsBzwAACCG1QAQAuwHlAAAIIbVABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV193V5wDk4+YA6efV5gDZ4ADn3efo2eHV
+        /tjZ4ADMv8G7xskAx8PNzr/Mw8nNya37ztni2eHj5wDp4gDMv8G7xskA2NngAL2/yM7Myf7KycUbx8nI
+        8ABS6eIAws+/0MkAysnFG8fJyKv7velv2NXg4wDX4+IA6NXX6OMA7QDX1ebdKeOt/wD/ytXm2dfZAOXp
+        2QDo6QDZ5end5OMA2efoF/7X4+Hk4Nno46370OnZ4OrZANfp1eLY4wDY2d7Z5wDV4Nsn4gDKycUbx8nI
+        /tniANngAMq9rf8A////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Fre_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK9gDuwA7AAAIDCa1QIMAIbVABgC7AWMAAAgp2AO6bwAACGpavSABAAhmbTECATJsAv8m
+        tUCDACG1QAYAuwFjAAAIKdgDum8AAAhqWr0gAQAIZm0xAgEybAL/alq9jgEACGZtbAL/eqwAzbVA0rVA
+        /yG1QAEAuwGyAAAIIbVAAgC7AcgAAAghtUADALsB3gAACCG1QAQAuwH0AAAIIbVABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/x9nm190A2LTp6N3g
+        3efZ5gDg2QDn7efoGuHZ/r27vr+7zwDH083OrfvI4+nnANXq4+LnAOniAMm/z8AA5OPp5gDq4+nnq/u/
+        4Nnq2e6u4NkA1erZ1wDV4ePp5gDZ6P7b2eLo3eDg2efn2a3/AP/J3LgA4LQb5end5NkA2efoAOTg2d3i
+        2a37zNnq2eLZ7gDl6dXi2ADq4+nnANXp5tnuAObV4tsb/uniAMrJxRvHycgA2NXi5wDq4+jm2QDKva3/
+        AP//////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Fre_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCa1QIMAIbVABgC7AVQAAAi6YAAACGpavREBAAhmbTECATJsDf8mtUCDACG1QAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xAgEybA3/alq9fwEACGZtbAL/eqwAzbVA0rVA/yG1QAEAuwGjAAAIIbVA
+        AgC7AbkAAAghtUADALsBzwAACCG1QAQAuwHlAAAIIbVABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/x9nm190A2LTp6N3g3efZ5gDg2QDn7efoGuHZ
+        /r27vr+7zwDH083OrfvI4+nnANXq4+LnAOniAMm/z8AA5OPp5gDq4+nnq/u/4Nnq2e6u4NkA1erZ1wDV
+        4ePp5gDZ6P7b2eLo3eDg2efn2a3/AP/J3LgA4LQb5end5NkA2efoAOTg2d3i2a37zNnq2eLZ7gDl6dXi
+        2ADq4+nnANXp5tnuAObV4tsb/uniAMrJxRvHycgA2NXi5wDq4+jm2QDKva3/AP//////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Ita_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK9gDuwA7AAAIDCa1QIMAIbVABgC7AWMAAAgp2AO6bwAACGpavSABAAhmbTECATJsAv8m
+        tUCDACG1QAYAuwFjAAAIKdgDum8AAAhqWr0gAQAIZm0xAgEybAL/alq9pgEACGZtbAL/eqwAzbVA0rVA
+        /yG1QAEAuwGyAAAIIbVAAgC7AcgAAAghtUADALsB3gAACCG1QAQAuwH0AAAIIbVABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV7t3ZAOTZ5gDp
+        59Xm2QDd4ADN3efo2eHV/r7JyMkAzb/BzL/Oya37u9bW3dXh4wDp4gDm2dvV4OMA5NnmAOjZANjVAOni
+        /r2/yM7MyQDKycUbx8nIuADp4gDPydDJAMrJxRvHycir+87m1ejo1eDjANfj4gDo1eLo4wDV4ePm2av/
+        AP/I4+IA3NXdAOTdJgDk4+fo4wDi2eDg1QDo6dX+5+Xp1djm1a37zuPm4tUA1QDo5uPq1ebh3QDY4+Tj
+        ANXq2eb+2Nnk4+fd6NXo4wDp4uMA4wDk3Sb6ysnFG8fJyADi2eAAyr2t/wD/////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Ita_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCa1QIMAIbVABgC7AVQAAAi6YAAACGpavREBAAhmbTECATJsDf8mtUCDACG1QAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xAgEybA3/alq9lwEACGZtbAL/eqwAzbVA0rVA/yG1QAEAuwGjAAAIIbVA
+        AgC7AbkAAAghtUADALsBzwAACCG1QAQAuwHlAAAIIbVABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/webV7t3ZAOTZ5gDp59Xm2QDd4ADN3efo2eHV
+        /r7JyMkAzb/BzL/Oya37u9bW3dXh4wDp4gDm2dvV4OMA5NnmAOjZANjVAOni/r2/yM7MyQDKycUbx8nI
+        uADp4gDPydDJAMrJxRvHycir+87m1ejo1eDjANfj4gDo1eLo4wDV4ePm2av/AP/I4+IA3NXdAOTdJgDk
+        4+fo4wDi2eDg1QDo6dX+5+Xp1djm1a37zuPm4tUA1QDo5uPq1ebh3QDY4+TjANXq2eb+2Nnk4+fd6NXo
+        4wDp4uMA4wDk3Sb6ysnFG8fJyADi2eAAyr2t/wD/////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Jap_4moves" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIK9gDuwA7AAAIDCa1QIMAIbVABgC7AWMAAAgp2AO6bwAACGpavSABAAhmbTECATJsAv8m
+        tUCDACG1QAYAuwFjAAAIKdgDum8AAAhqWr0gAQAIZm0xAgEybAL/alq9pgEACGZtbAL/eqwAzbVA0rVA
+        /yG1QAEAuwGyAAAIIbVAAgC7AcgAAAghtUADALsB3gAACCG1QAQAuwH0AAAIIbVABQC7AQoBAAgD/3sB
+        ADcAewEBOAB7AQI5AHsBAzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMD
+        OgAD/3sEADcAewQBOAB7BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/HAw4FQUIKCMZAC0A
+        OygmA/4CEEEHAAEoNxQDADs8Ah8Nq/tFA0AAn1lzfl5+YK4ABif+ChkAn1lzfhkAEB87Lfqdeo9+ZAAC
+        EAwfDav7QQI9FgAPQRMT/ghBCwKr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAFJAATIxE3/gJQSwIZACYDRA0Y+59Zc34tAJtfWn4WAAE+CRMGJ/4jAwIRRQAFCgwIQQsC/wAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+  <data name="ROM_FR_GiveEgg_Jap_4moves_kill" type="System.Byte[], mscorlib">
+    <value>
+        AAAAALgEAAAIDCa1QIMAIbVABgC7AVQAAAi6YAAACGpavREBAAhmbTECATJsDf8mtUCDACG1QAYAuwFU
+        AAAIumAAAAhqWr0RAQAIZm0xAgEybA3/alq9lwEACGZtbAL/eqwAzbVA0rVA/yG1QAEAuwGjAAAIIbVA
+        AgC7AbkAAAghtUADALsBzwAACCG1QAQAuwHlAAAIIbVABQC7AfsAAAgD/3sBADcAewEBOAB7AQI5AHsB
+        AzoAA/97AgA3AHsCATgAewICOQB7AgM6AAP/ewMANwB7AwE4AHsDAjkAewMDOgAD/3sEADcAewQBOAB7
+        BAI5AHsEAzoAA/97BQA3AHsFATgAewUCOQB7BQM6AAP/HAw4FQUIKCMZAC0AOygmA/4CEEEHAAEoNxQD
+        ADs8Ah8Nq/tFA0AAn1lzfl5+YK4ABif+ChkAn1lzfhkAEB87Lfqdeo9+ZAACEAwfDav7QQI9FgAPQRMT
+        /ghBCwKr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFJAATIxE3/gJQSwIZ
+        ACYDRA0Y+59Zc34tAJtfWn4WAAE+CRMGJ/4jAwIRRQAFCgwIQQsC/wAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////w==
+</value>
+  </data>
+</root>
