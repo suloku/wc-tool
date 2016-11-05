@@ -874,6 +874,8 @@ namespace WC3_TOOL
 			Data[getBlockOffset(0xC99, 4)] = 0x97;
 			Data[getBlockOffset(0xC9A, 4)] = 0x13;
 			Data[getBlockOffset(0xC9B, 4)] = 0x01;
+			
+			update_section_chk(4);
 		}
         public bool has_EggEvent_Flag()
         {
