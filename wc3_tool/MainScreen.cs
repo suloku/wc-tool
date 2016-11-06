@@ -39,7 +39,7 @@ namespace WC3_TOOL
 		public static string savfilter = "RAW Save file|*.sav;*sa1;*sa2|All Files (*.*)|*.*";
 		public string wc3filter = "Wonder Card file|*.wc3|All Files (*.*)|*.*";
 		public string wcnfilter = "Wonder News file|*.wn3|All Files (*.*)|*.*";
-		public string me3filter = "Mistery Event file|*.me3|All Files (*.*)|*.*";
+		public string me3filter = "Mystery Event file|*.me3|All Files (*.*)|*.*";
 		public string ectfilter = "e-card Trainer file|*.ect|All Files (*.*)|*.*";
 		public string berryfilter = "e-card Berry file|*.ecb|All Files (*.*)|*.*";
 		public byte[] savbuffer;
@@ -54,14 +54,9 @@ namespace WC3_TOOL
 			Form wc3edit = new WC3_editor();
 			wc3edit.ShowDialog();
 		}
-		void Load_save(string path)
+		
+		void update_button_state()
 		{
-			int filesize = FileIO.load_file(ref savbuffer, ref path, savfilter);
-			if( filesize == SAV3.SAVE_SIZE)
-			{				
-				sav3_path.Text = path;
-				sav3file = new SAV3(savbuffer);
-				
 				export_wc3but.Enabled = false;
 				inject_wc3_but.Enabled = false;
 				export_wcn.Enabled = false;
@@ -80,7 +75,7 @@ namespace WC3_TOOL
 				
 				toolStripMenuItem1.Enabled = false;
 				exportOldSaveToolStripMenuItem.Enabled = false;
-				enableMisteryGiftMainScreenStripMenuItem.Enabled = false;
+				enableMysteryGiftMainScreenStripMenuItem.Enabled = false;
 				fixSectionChecksumsToolStripMenuItem.Enabled = false;
 				
 				switch(sav3file.game)
@@ -120,7 +115,7 @@ namespace WC3_TOOL
 				}
 				toolStripMenuItem1.Enabled = true;
 				exportOldSaveToolStripMenuItem.Enabled = true;
-				enableMisteryGiftMainScreenStripMenuItem.Enabled = true;
+				enableMysteryGiftMainScreenStripMenuItem.Enabled = true;
 				fixSectionChecksumsToolStripMenuItem.Enabled = true;
 				clearEggEventFlagToolStripMenuItem.Enabled = sav3file.has_EggEvent_Flag();
 				
@@ -133,6 +128,17 @@ namespace WC3_TOOL
 					region_lab.Text = "USA/EUR";
 
 				region_but.Enabled = true;
+		}
+		
+		void Load_save(string path)
+		{
+			int filesize = FileIO.load_file(ref savbuffer, ref path, savfilter);
+			if( filesize == SAV3.SAVE_SIZE)
+			{				
+				sav3_path.Text = path;
+				sav3file = new SAV3(savbuffer);
+				
+				update_button_state();
 				
 				language_box.SelectedIndex = sav3file.language-1;
 				game_box.SelectedIndex = sav3file.game;
@@ -181,7 +187,7 @@ namespace WC3_TOOL
 					return;
 				}
 			}
-					if (sav3file.has_mistery_gift == true)
+					if (sav3file.has_mystery_gift == true)
 					{
 						string path = null;
 						int filesize = FileIO.load_file(ref wc3new, ref path, wc3filter);
@@ -201,7 +207,7 @@ namespace WC3_TOOL
 						}
 					}else
 					{
-						MessageBox.Show("Save file does not have Mistery Gift enabled.");
+						MessageBox.Show("Save file does not have Mystery Gift enabled.");
 					}
 		}
 		void Export_wcnClick(object sender, EventArgs e)
@@ -213,7 +219,7 @@ namespace WC3_TOOL
 		}
 		void Inject_wcnClick(object sender, EventArgs e)
 		{
-			if (sav3file.has_mistery_gift == true)
+			if (sav3file.has_mystery_gift == true)
 			{
 				string path = null;
 				int filesize = FileIO.load_file(ref wcnnew, ref path, wcnfilter);
@@ -233,7 +239,7 @@ namespace WC3_TOOL
 				}
 			}else
 			{
-				MessageBox.Show("Save file does not have Mistery Gift enabled.");
+				MessageBox.Show("Save file does not have Mystery Gift enabled.");
 			}
 		}
 		void Wcn_edit_butClick(object sender, EventArgs e)
@@ -245,19 +251,19 @@ namespace WC3_TOOL
 		{
 			int check = sav3file.has_ME3();
 			if(check == 0)
-				MessageBox.Show("Save file does not contain Mistery Event Data.");
+				MessageBox.Show("Save file does not contain Mystery Event Data.");
 			else if(check == 2)
-				MessageBox.Show("Save file does contain Mistery Event Data, but the script has already been erased from savedata.");
+				MessageBox.Show("Save file does contain Mystery Event Data, but the script has already been erased from savedata.");
 			
 			if (check != 0)
 				FileIO.save_data(sav3file.get_ME3(), me3filter);
 		}
 		void Inject_me3_butClick(object sender, EventArgs e)
 		{
-			if (sav3file.has_mistery_event == true || sav3file.game == 1)
+			if (sav3file.has_mystery_event == true || sav3file.game == 1)
 			{
 				if (sav3file.game == 1)
-					MessageBox.Show("Mistery Event was removed from non Japanese Emerald.\n\tYou can still inject the data at your own risk.");
+					MessageBox.Show("Mystery Event was removed from non Japanese Emerald.\n\tYou can still inject the data at your own risk.");
 				string path = null;
 				int filesize = FileIO.load_file(ref me3file, ref path, me3filter);
 				if( filesize == sav3file.me3_size )
@@ -272,7 +278,7 @@ namespace WC3_TOOL
 						//custom_script.Checked = true;
 						//Add fix sav3 checksum func3
 						sav3file.update_section_chk(4);
-						MessageBox.Show("Mistery event injected.");
+						MessageBox.Show("Mystery event injected.");
 						FileIO.save_data(sav3file.Data, savfilter);
 					}
 					
@@ -283,7 +289,7 @@ namespace WC3_TOOL
 				}
 			}else
 			{
-				MessageBox.Show("Save file does not have Mistery Event enabled.");
+				MessageBox.Show("Save file does not have Mystery Event enabled.");
 			}
 		}
 		void Me3_editor_butClick(object sender, EventArgs e)
@@ -295,12 +301,12 @@ namespace WC3_TOOL
 		{
 			MessageBox.Show("This will enable the Eon ticket event as distributed in Japan.\nKeep in mind this event was never available outside Japan.\nIf you want a legit EON ticket in Emerald, you have to Mix Records with a Ruby/Saphire game with distributable EON ticket.");
 			sav3file.enable_eon_emerald();
-			MessageBox.Show("Mistery event EON Ticket injected.\n\nNote: if you saved in the 2nd floor of Pokémon Center, you'll have to exit and enter for the Blue man to appear.");
+			MessageBox.Show("Mystery event EON Ticket injected.\n\nNote: if you saved in the 2nd floor of Pokémon Center, you'll have to exit and enter for the Blue man to appear.");
 			FileIO.save_data(sav3file.Data, savfilter);
 		}
-		void EnableMisteryGiftMainScreenStripMenuItemClick(object sender, EventArgs e)
+		void EnableMysteryGiftMainScreenStripMenuItemClick(object sender, EventArgs e)
 		{
-			sav3file.enable_Mistery();
+			sav3file.enable_Mystery();
 			FileIO.save_data(sav3file.Data, savfilter);
 		}
 		void Region_butClick(object sender, EventArgs e)
@@ -334,19 +340,19 @@ namespace WC3_TOOL
 		{
 			/*int check = sav3file.has_ME3();
 			if(check == 0)
-				MessageBox.Show("Save file does not contain Mistery Event Data.");
+				MessageBox.Show("Save file does not contain Mystery Event Data.");
 			else if(check == 2)
-				MessageBox.Show("Save file does contain Mistery Event Data, but the script has already been erased from savedata.");
+				MessageBox.Show("Save file does contain Mystery Event Data, but the script has already been erased from savedata.");
 			
 			if (check != 0)*/
 				FileIO.save_data(sav3file.get_ECT(), ectfilter);
 		}
 		void Inject_ect_butClick(object sender, EventArgs e)
 		{
-			//if (sav3file.has_mistery_event == true || sav3file.game == 1)
+			//if (sav3file.has_mystery_event == true || sav3file.game == 1)
 			//{
 				if (sav3file.game == 1)
-					MessageBox.Show("Mistery Event was removed from non Japanese Emerald.\n\tYou can still inject the data at your own risk.");
+					MessageBox.Show("Mystery Event was removed from non Japanese Emerald.\n\tYou can still inject the data at your own risk.");
 				string path = null;
 				int filesize = FileIO.load_file(ref ectfile, ref path, ectfilter);
 				if( filesize == ECT.SIZE_ECT )
@@ -363,7 +369,7 @@ namespace WC3_TOOL
 				}
 			//}else
 			//{
-			//	MessageBox.Show("Save file does not have Mistery Event enabled.");
+			//	MessageBox.Show("Save file does not have Mystery Event enabled.");
 			//}
 		}
 		void MainScreenDragEnter(object sender, DragEventArgs e)
@@ -378,6 +384,7 @@ namespace WC3_TOOL
 		void Game_boxSelectedIndexChanged(object sender, EventArgs e)
 		{
 			sav3file.game = game_box.SelectedIndex;
+			update_button_state();
 			sav3file.updateOffsets();
 		}
 		void Language_boxSelectedIndexChanged(object sender, EventArgs e)
@@ -394,6 +401,7 @@ namespace WC3_TOOL
 			else
 				region_lab.Text = "USA/EUR";
 			
+			update_button_state();			
 			sav3file.updateOffsets();
 		}
 		void ExportOldSaveToolStripMenuItemClick(object sender, EventArgs e)
@@ -455,7 +463,7 @@ namespace WC3_TOOL
 		}
 		void AboutToolStripMenuItem1Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Mistery Gift Tool 0.1 by suloku ("+version()+")\n\nMany thanks to ajxpkm, Real.96, BlackShark, lostaddict, Háčky and many more involved in Mistery Event research!\n\nThe research thread at projectpokemon.org might be of your interest.\n\nIf you want to contribute any missing event, contact suloku or ajxpkm at projectpokemon's forums or gen3mysterygift@gmail.com");
+			MessageBox.Show("Mystery Gift Tool 0.1c by suloku ("+version()+")\n\nMany thanks to ajxpkm, Real.96, BlackShark, lostaddict, Háčky and many more involved in Mystery Event research!\n\nThe research thread at projectpokemon.org might be of your interest.\n\nIf you want to contribute any missing event, contact suloku or ajxpkm at projectpokemon's forums or gen3mysterygift@gmail.com");
 		}
 		void Tvswarm_butClick(object sender, EventArgs e)
 		{

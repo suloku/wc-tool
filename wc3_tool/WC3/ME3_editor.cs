@@ -35,7 +35,7 @@ namespace WC3_TOOL
 			//
 		}
 		
-		public string me3filter = "Mistery Event file|*.me3|All Files (*.*)|*.*";
+		public string me3filter = "Mystery Event file|*.me3|All Files (*.*)|*.*";
 		public string scriptfilter = "Script file|*.script|All Files (*.*)|*.*";
 		public string xsescriptfilter = "XSE padded script file|*.gba";
 		public byte[] me3buffer;

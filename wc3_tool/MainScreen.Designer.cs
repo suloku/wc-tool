@@ -30,7 +30,7 @@ namespace WC3_TOOL
 		private System.Windows.Forms.Button me3_editor_but;
 		private System.Windows.Forms.Button eon_em_but;
 		private System.Windows.Forms.ToolStripMenuItem extraToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem enableMisteryGiftMainScreenStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem enableMysteryGiftMainScreenStripMenuItem;
 		private System.Windows.Forms.Button region_but;
 		private System.Windows.Forms.ToolStripMenuItem fixSectionChecksumsToolStripMenuItem;
 		private System.Windows.Forms.Button decor_but;
@@ -87,7 +87,7 @@ namespace WC3_TOOL
 			this.exportOldSaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.fixSectionChecksumsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.extraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.enableMisteryGiftMainScreenStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.enableMysteryGiftMainScreenStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.clearEggEventFlagToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.export_wcn = new System.Windows.Forms.Button();
@@ -229,19 +229,19 @@ namespace WC3_TOOL
 			// extraToolStripMenuItem
 			// 
 			this.extraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.enableMisteryGiftMainScreenStripMenuItem,
+			this.enableMysteryGiftMainScreenStripMenuItem,
 			this.clearEggEventFlagToolStripMenuItem});
 			this.extraToolStripMenuItem.Name = "extraToolStripMenuItem";
 			this.extraToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
 			this.extraToolStripMenuItem.Text = "Extra";
 			// 
-			// enableMisteryGiftMainScreenStripMenuItem
+			// enableMysteryGiftMainScreenStripMenuItem
 			// 
-			this.enableMisteryGiftMainScreenStripMenuItem.Enabled = false;
-			this.enableMisteryGiftMainScreenStripMenuItem.Name = "enableMisteryGiftMainScreenStripMenuItem";
-			this.enableMisteryGiftMainScreenStripMenuItem.Size = new System.Drawing.Size(207, 22);
-			this.enableMisteryGiftMainScreenStripMenuItem.Text = "Enable Mistery Gift/Event";
-			this.enableMisteryGiftMainScreenStripMenuItem.Click += new System.EventHandler(this.EnableMisteryGiftMainScreenStripMenuItemClick);
+			this.enableMysteryGiftMainScreenStripMenuItem.Enabled = false;
+			this.enableMysteryGiftMainScreenStripMenuItem.Name = "enableMysteryGiftMainScreenStripMenuItem";
+			this.enableMysteryGiftMainScreenStripMenuItem.Size = new System.Drawing.Size(207, 22);
+			this.enableMysteryGiftMainScreenStripMenuItem.Text = "Enable Mystery Gift/Event";
+			this.enableMysteryGiftMainScreenStripMenuItem.Click += new System.EventHandler(this.EnableMysteryGiftMainScreenStripMenuItemClick);
 			// 
 			// clearEggEventFlagToolStripMenuItem
 			// 
@@ -483,7 +483,7 @@ namespace WC3_TOOL
 			this.groupBox1.Size = new System.Drawing.Size(219, 136);
 			this.groupBox1.TabIndex = 28;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Mistery Gift";
+			this.groupBox1.Text = "Mystery Gift";
 			// 
 			// groupBox2
 			// 
@@ -496,7 +496,7 @@ namespace WC3_TOOL
 			this.groupBox2.Size = new System.Drawing.Size(215, 136);
 			this.groupBox2.TabIndex = 29;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Mistery Event";
+			this.groupBox2.Text = "Mystery Event";
 			// 
 			// groupBox3
 			// 
@@ -553,7 +553,7 @@ namespace WC3_TOOL
 			this.Controls.Add(this.load_save_but);
 			this.Controls.Add(this.menuStrip1);
 			this.Name = "MainScreen";
-			this.Text = "Mistery Gift Tool 0.1 by suloku";
+			this.Text = "Mystery Gift Tool 0.1c by suloku";
 			this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainScreenDragDrop);
 			this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainScreenDragEnter);
 			this.menuStrip1.ResumeLayout(false);

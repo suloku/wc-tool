@@ -385,7 +385,7 @@ namespace WC3_TOOL
 			this.Controls.Add(this.sav3_path);
 			this.Controls.Add(this.load_save_but);
 			this.Name = "EventTool";
-			this.Text = "Gen3 Event Tool 0.1 by suloku";
+			this.Text = "Gen3 Event Tool 0.1c by suloku";
 			this.DragDrop += new System.Windows.Forms.DragEventHandler(this.EventToolDragDrop);
 			this.DragEnter += new System.Windows.Forms.DragEventHandler(this.EventToolDragEnter);
 			this.JAP_group.ResumeLayout(false);

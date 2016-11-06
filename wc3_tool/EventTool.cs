@@ -35,7 +35,7 @@ namespace WC3_TOOL
 		public string savfilter = "RAW Save file|*.sav;*sa1;*sa2|All Files (*.*)|*.*";
 		public string wc3filter = "Wonder Card file|*.wc3|All Files (*.*)|*.*";
 		public string wcnfilter = "Wonder News file|*.wn3|All Files (*.*)|*.*";
-		public string me3filter = "Mistery Event file|*.me3|All Files (*.*)|*.*";
+		public string me3filter = "Mystery Event file|*.me3|All Files (*.*)|*.*";
 		public string ectfilter = "e-card Trainer file|*.ect|All Files (*.*)|*.*";
 		public string berryfilter = "e-card Berry file|*.ecb|All Files (*.*)|*.*";
 		public byte[] savbuffer;
@@ -135,7 +135,7 @@ namespace WC3_TOOL
 					return;
 				}
 			}
-					if (sav3file.has_mistery_gift == true)
+					if (sav3file.has_mystery_gift == true)
 					{
 						string path = null;
 						int filesize = FileIO.load_file(ref wc3new, ref path, wc3filter);
@@ -155,7 +155,7 @@ namespace WC3_TOOL
 						}
 					}else
 					{
-						MessageBox.Show("Save file does not have Mistery Gift enabled.");
+						MessageBox.Show("Save file does not have Mystery Gift enabled.");
 					}
 		}
 		void Export_wcnClick(object sender, EventArgs e)
@@ -167,7 +167,7 @@ namespace WC3_TOOL
 		}
 		void Inject_wcnClick(object sender, EventArgs e)
 		{
-			if (sav3file.has_mistery_gift == true)
+			if (sav3file.has_mystery_gift == true)
 			{
 				string path = null;
 				int filesize = FileIO.load_file(ref wcnnew, ref path, wcnfilter);
@@ -187,7 +187,7 @@ namespace WC3_TOOL
 				}
 			}else
 			{
-				MessageBox.Show("Save file does not have Mistery Gift enabled.");
+				MessageBox.Show("Save file does not have Mystery Gift enabled.");
 			}
 		}
 		void Wcn_edit_butClick(object sender, EventArgs e)
@@ -199,19 +199,19 @@ namespace WC3_TOOL
 		{
 			int check = sav3file.has_ME3();
 			if(check == 0)
-				MessageBox.Show("Save file does not contain Mistery Event Data.");
+				MessageBox.Show("Save file does not contain Mystery Event Data.");
 			else if(check == 2)
-				MessageBox.Show("Save file does contain Mistery Event Data, but the script has already been erased from savedata.");
+				MessageBox.Show("Save file does contain Mystery Event Data, but the script has already been erased from savedata.");
 			
 			if (check != 0)
 				FileIO.save_data(sav3file.get_ME3(), me3filter);
 		}
 		void Inject_me3_butClick(object sender, EventArgs e)
 		{
-			if (sav3file.has_mistery_event == true || sav3file.game == 1)
+			if (sav3file.has_mystery_event == true || sav3file.game == 1)
 			{
 				if (sav3file.game == 1)
-					MessageBox.Show("Mistery Event was removed from non Japanesse Emerald.\n\tYou can still inject the data at your own risk.");
+					MessageBox.Show("Mystery Event was removed from non Japanesse Emerald.\n\tYou can still inject the data at your own risk.");
 				string path = null;
 				int filesize = FileIO.load_file(ref me3file, ref path, me3filter);
 				if( filesize == sav3file.me3_size )
@@ -226,7 +226,7 @@ namespace WC3_TOOL
 						//custom_script.Checked = true;
 						//Add fix sav3 checksum func3
 						sav3file.update_section_chk(4);
-						MessageBox.Show("Mistery event injected.");
+						MessageBox.Show("Mystery event injected.");
 						FileIO.save_data(sav3file.Data, savfilter);
 					}
 					
@@ -237,7 +237,7 @@ namespace WC3_TOOL
 				}
 			}else
 			{
-				MessageBox.Show("Save file does not have Mistery Event enabled.");
+				MessageBox.Show("Save file does not have Mystery Event enabled.");
 			}
 		}
 		void Me3_editor_butClick(object sender, EventArgs e)
@@ -249,12 +249,12 @@ namespace WC3_TOOL
 		{
 			MessageBox.Show("This will enable the Eon ticket event as distributed in Japan.\nKeep in mind this event was never available outside Japan.\nIf you want a legit EON ticket in Emerald, you have to Mix Records with a Ruby/Saphire game with distributable EON ticket.");
 			sav3file.enable_eon_emerald();
-			MessageBox.Show("Mistery event EON Ticket injected.\n\nNote: if you saved in the 2nd floor of Pokémon Center, you'll have to exit and enter for the Blue man to appear.");
+			MessageBox.Show("Mystery event EON Ticket injected.\n\nNote: if you saved in the 2nd floor of Pokémon Center, you'll have to exit and enter for the Blue man to appear.");
 			FileIO.save_data(sav3file.Data, savfilter);
 		}
-		void EnableMisteryGiftEventToolStripMenuItemClick(object sender, EventArgs e)
+		void EnableMysteryGiftEventToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			sav3file.enable_Mistery();
+			sav3file.enable_Mystery();
 			FileIO.save_data(sav3file.Data, savfilter);
 		}
 		void Region_butClick(object sender, EventArgs e)
@@ -288,19 +288,19 @@ namespace WC3_TOOL
 		{
 			/*int check = sav3file.has_ME3();
 			if(check == 0)
-				MessageBox.Show("Save file does not contain Mistery Event Data.");
+				MessageBox.Show("Save file does not contain Mystery Event Data.");
 			else if(check == 2)
-				MessageBox.Show("Save file does contain Mistery Event Data, but the script has already been erased from savedata.");
+				MessageBox.Show("Save file does contain Mystery Event Data, but the script has already been erased from savedata.");
 			
 			if (check != 0)*/
 				FileIO.save_data(sav3file.get_ECT(), ectfilter);
 		}
 		void Inject_ect_butClick(object sender, EventArgs e)
 		{
-			//if (sav3file.has_mistery_event == true || sav3file.game == 1)
+			//if (sav3file.has_mystery_event == true || sav3file.game == 1)
 			//{
 				if (sav3file.game == 1)
-					MessageBox.Show("Mistery Event was removed from non Japanesse Emerald.\n\tYou can still inject the data at your own risk.");
+					MessageBox.Show("Mystery Event was removed from non Japanesse Emerald.\n\tYou can still inject the data at your own risk.");
 				string path = null;
 				int filesize = FileIO.load_file(ref ectfile, ref path, ectfilter);
 				if( filesize == ECT.SIZE_ECT )
@@ -317,7 +317,7 @@ namespace WC3_TOOL
 				}
 			//}else
 			//{
-			//	MessageBox.Show("Save file does not have Mistery Event enabled.");
+			//	MessageBox.Show("Save file does not have Mystery Event enabled.");
 			//}
 		}
 		void EventToolDragEnter(object sender, DragEventArgs e)
@@ -460,32 +460,32 @@ namespace WC3_TOOL
 				case 0://JAP
 					if (jap_eon.Checked == true)
 					{
-						if (sav3file.has_mistery_event == true)
+						if (sav3file.has_mystery_event == true)
 						{
 							if (game_box.SelectedIndex == 0) //RS
 							{
 								sav3file.set_ME3((byte[]) Tickets.GetObject("JAP_EON_FILE"));
 								sav3file.update_section_chk(4);
-								MessageBox.Show("Eon Ticket Mistery Event injected.\n\nGo see your father at Petalburg Gym.");
+								MessageBox.Show("Eon Ticket Mystery Event injected.\n\nGo see your father at Petalburg Gym.");
 								FileIO.save_data(sav3file.Data, savfilter);
 							}
 							else if (game_box.SelectedIndex == 1) //E
 							{
 								sav3file.enable_eon_emerald();
-								MessageBox.Show("Eon Ticket Mistery Event injected.\nGo see the man in blue at pokemon's center 2nd floor.\nNote: if you saved in the 2nd floor of Pokémon Center, you'll have to exit and enter for the Blue man to appear.");
+								MessageBox.Show("Eon Ticket Mystery Event injected.\nGo see the man in blue at pokemon's center 2nd floor.\nNote: if you saved in the 2nd floor of Pokémon Center, you'll have to exit and enter for the Blue man to appear.");
 								FileIO.save_data(sav3file.Data, savfilter);
 							}
 						}
 						else
 						{
-							MessageBox.Show("Please enable Mistery Event in the savefile.");
+							MessageBox.Show("Please enable Mystery Event in the savefile.");
 						}
 					}
 					else if (jap_aurora.Checked == true)
 					{
 						if (game_box.SelectedIndex == 2) //FRLG
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("JAP_AURORA_FRLG_FILE"));
 								sav3file.update_section_chk(4);
@@ -494,7 +494,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
@@ -503,7 +503,7 @@ namespace WC3_TOOL
 					{
 						if (game_box.SelectedIndex == 1) //E
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("JAP_MYSTIC_E_FILE"));
 								sav3file.update_section_chk(4);
@@ -512,13 +512,13 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable Mistery Gift in the savefile.");
+								MessageBox.Show("Please enable Mystery Gift in the savefile.");
 							}
 
 						}
 						else if (game_box.SelectedIndex == 2) //FRLG
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("JAP_MYSTIC_FRLG_FILE"));
 								sav3file.update_section_chk(4);
@@ -527,7 +527,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable Mistery Gift in the savefile.");
+								MessageBox.Show("Please enable Mystery Gift in the savefile.");
 							}
 
 						}
@@ -536,7 +536,7 @@ namespace WC3_TOOL
 					{
 						if (game_box.SelectedIndex == 1) //E
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("JAP_OLDMAP_E_FILE"));
 								sav3file.update_section_chk(4);
@@ -545,7 +545,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable Mistery Gift in the savefile.");
+								MessageBox.Show("Please enable Mystery Gift in the savefile.");
 							}
 
 						}
@@ -554,43 +554,43 @@ namespace WC3_TOOL
 				case 1://English
 					if (usa_eon_ecard.Checked == true)
 					{
-						if (sav3file.has_mistery_event == true)
+						if (sav3file.has_mystery_event == true)
 						{
 							if (game_box.SelectedIndex == 0) //RS
 							{
 								sav3file.set_ME3((byte[]) Tickets.GetObject("USA_EON_ECARD_FILE"));
 								sav3file.update_section_chk(4);
-								MessageBox.Show("Eon Ticket Mistery Event injected.\n\nGo see your father at Petalburg Gym.");
+								MessageBox.Show("Eon Ticket Mystery Event injected.\n\nGo see your father at Petalburg Gym.");
 								FileIO.save_data(sav3file.Data, savfilter);
 							}
 						}
 						else
 						{
-							MessageBox.Show("Please enable Mistery Event in the savefile.");
+							MessageBox.Show("Please enable Mystery Event in the savefile.");
 						}
 					}
 					else if (usa_eon_italy.Checked == true)
 					{
-						if (sav3file.has_mistery_event == true)
+						if (sav3file.has_mystery_event == true)
 						{
 							if (game_box.SelectedIndex == 0) //RS
 							{
 								sav3file.set_ME3((byte[]) Tickets.GetObject("USA_EON_ITALY_FILE"));
 								sav3file.update_section_chk(4);
-								MessageBox.Show("Eon Ticket Mistery Event injected.\n\nGo see your father at Petalburg Gym.");
+								MessageBox.Show("Eon Ticket Mystery Event injected.\n\nGo see your father at Petalburg Gym.");
 								FileIO.save_data(sav3file.Data, savfilter);
 							}
 						}
 						else
 						{
-							MessageBox.Show("Please enable Mistery Event in the savefile.");
+							MessageBox.Show("Please enable Mystery Event in the savefile.");
 						}
 					}
 					else if (usa_aurora.Checked == true)
 					{
 						if (game_box.SelectedIndex == 1) //E
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("USA_AURORA_E_FILE"));
 								sav3file.update_section_chk(4);
@@ -599,13 +599,13 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
 						else if (game_box.SelectedIndex == 2) //FRLG
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("USA_AURORA_FRLG_FILE"));
 								sav3file.update_section_chk(4);
@@ -614,7 +614,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
@@ -623,7 +623,7 @@ namespace WC3_TOOL
 					{
 						if (game_box.SelectedIndex == 1) //E
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("USA_MYSTIC_E_FILE"));
 								sav3file.update_section_chk(4);
@@ -632,14 +632,14 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable Mistery Gift in the savefile.");
+								MessageBox.Show("Please enable Mystery Gift in the savefile.");
 							}
 
 						}/*
 						else if (game_box.SelectedIndex == 2) //FRLG
 						{
 
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("USA_MYSTIC_FRLG_FILE"));
 								sav3file.update_section_chk(4);
@@ -648,7 +648,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable Mistery Gift in the savefile.");
+								MessageBox.Show("Please enable Mystery Gift in the savefile.");
 							}
 						}*/
 
@@ -657,26 +657,26 @@ namespace WC3_TOOL
 				case 2://French
 					if (eur_eon.Checked == true)
 					{
-						if (sav3file.has_mistery_event == true)
+						if (sav3file.has_mystery_event == true)
 						{
 							if (game_box.SelectedIndex == 0) //RS
 							{
 								sav3file.set_ME3((byte[]) Tickets.GetObject("FR_EON_FILE"));
 								sav3file.update_section_chk(4);
-								MessageBox.Show("Eon Ticket Mistery Event injected.\n\nGo see your father at Petalburg Gym.");
+								MessageBox.Show("Eon Ticket Mystery Event injected.\n\nGo see your father at Petalburg Gym.");
 								FileIO.save_data(sav3file.Data, savfilter);
 							}
 						}
 						else
 						{
-							MessageBox.Show("Please enable Mistery Event in the savefile.");
+							MessageBox.Show("Please enable Mystery Event in the savefile.");
 						}
 					}
 					else if (eur_aurora.Checked == true)
 					{
 						if (game_box.SelectedIndex == 1) //E
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("FR_AURORA_E_FILE"));
 								sav3file.update_section_chk(4);
@@ -685,13 +685,13 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
 						else if (game_box.SelectedIndex == 2) //FRLG
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("FR_AURORA_FRLG_FILE"));
 								sav3file.update_section_chk(4);
@@ -700,7 +700,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
@@ -709,26 +709,26 @@ namespace WC3_TOOL
 				case 3://Italian
 					if (eur_eon.Checked == true)
 					{
-						if (sav3file.has_mistery_event == true)
+						if (sav3file.has_mystery_event == true)
 						{
 							if (game_box.SelectedIndex == 0) //RS
 							{
 								sav3file.set_ME3((byte[]) Tickets.GetObject("IT_EON_FILE"));
 								sav3file.update_section_chk(4);
-								MessageBox.Show("Eon Ticket Mistery Event injected.\n\nGo see your father at Petalburg Gym.");
+								MessageBox.Show("Eon Ticket Mystery Event injected.\n\nGo see your father at Petalburg Gym.");
 								FileIO.save_data(sav3file.Data, savfilter);
 							}
 						}
 						else
 						{
-							MessageBox.Show("Please enable Mistery Event in the savefile.");
+							MessageBox.Show("Please enable Mystery Event in the savefile.");
 						}
 					}
 					else if (eur_aurora.Checked == true)
 					{
 						if (game_box.SelectedIndex == 1) //E
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("IT_AURORA_E_FILE"));
 								sav3file.update_section_chk(4);
@@ -737,13 +737,13 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
 						else if (game_box.SelectedIndex == 2) //FRLG
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("IT_AURORA_FRLG_FILE"));
 								sav3file.update_section_chk(4);
@@ -752,7 +752,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
@@ -761,26 +761,26 @@ namespace WC3_TOOL
 				case 4://German
 					if (eur_eon.Checked == true)
 					{
-						if (sav3file.has_mistery_event == true)
+						if (sav3file.has_mystery_event == true)
 						{
 							if (game_box.SelectedIndex == 0) //RS
 							{
 								sav3file.set_ME3((byte[]) Tickets.GetObject("DE_EON_FILE"));
 								sav3file.update_section_chk(4);
-								MessageBox.Show("Eon Ticket Mistery Event injected.\n\nGo see your father at Petalburg Gym.");
+								MessageBox.Show("Eon Ticket Mystery Event injected.\n\nGo see your father at Petalburg Gym.");
 								FileIO.save_data(sav3file.Data, savfilter);
 							}
 						}
 						else
 						{
-							MessageBox.Show("Please enable Mistery Event in the savefile.");
+							MessageBox.Show("Please enable Mystery Event in the savefile.");
 						}
 					}
 					else if (eur_aurora.Checked == true)
 					{
 						if (game_box.SelectedIndex == 1) //E
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("DE_AURORA_E_FILE"));
 								sav3file.update_section_chk(4);
@@ -789,13 +789,13 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
 						else if (game_box.SelectedIndex == 2) //FRLG
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("DE_AURORA_FRLG_FILE"));
 								sav3file.update_section_chk(4);
@@ -804,7 +804,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
@@ -815,26 +815,26 @@ namespace WC3_TOOL
 				case 6://Spanish
 					if (eur_eon.Checked == true)
 					{
-						if (sav3file.has_mistery_event == true)
+						if (sav3file.has_mystery_event == true)
 						{
 							if (game_box.SelectedIndex == 0) //RS
 							{
 								sav3file.set_ME3((byte[]) Tickets.GetObject("SP_EON_FILE"));
 								sav3file.update_section_chk(4);
-								MessageBox.Show("Eon Ticket Mistery Event injected.\n\nGo see your father at Petalburg Gym.");
+								MessageBox.Show("Eon Ticket Mystery Event injected.\n\nGo see your father at Petalburg Gym.");
 								FileIO.save_data(sav3file.Data, savfilter);
 							}
 						}
 						else
 						{
-							MessageBox.Show("Please enable Mistery Event in the savefile.");
+							MessageBox.Show("Please enable Mystery Event in the savefile.");
 						}
 					}
 					else if (eur_aurora.Checked == true)
 					{
 						if (game_box.SelectedIndex == 1) //E
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("SP_AURORA_E_FILE"));
 								sav3file.update_section_chk(4);
@@ -843,13 +843,13 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}
 						else if (game_box.SelectedIndex == 2) //FRLG
 						{
-							if (sav3file.has_mistery_gift == true)
+							if (sav3file.has_mystery_gift == true)
 							{
 								sav3file.set_WC3((byte[]) Tickets.GetObject("SP_AURORA_FRLG_FILE"));
 								sav3file.update_section_chk(4);
@@ -858,7 +858,7 @@ namespace WC3_TOOL
 							}
 							else
 							{
-								MessageBox.Show("Please enable mistery gift in the savefile.");
+								MessageBox.Show("Please enable mystery gift in the savefile.");
 							}
 
 						}

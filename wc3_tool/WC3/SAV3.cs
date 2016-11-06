@@ -93,8 +93,8 @@ namespace WC3_TOOL
         public int game = -1;
         public bool has_WC = false;
         public bool has_WCN = false;
-        public bool has_mistery_gift = false;
-        public bool has_mistery_event = false;
+        public bool has_mystery_gift = false;
+        public bool has_mystery_event = false;
         
         public bool isjap = false;
         public int language = 0;
@@ -313,7 +313,7 @@ namespace WC3_TOOL
 					
 					break;
         	}
-		    has_Mistery();
+		    has_Mystery();
 		    has_WC3();
 		    hasWCN();
 		    has_EggEvent_Flag();
@@ -477,45 +477,45 @@ namespace WC3_TOOL
         	else
         		has_WC = true;
         }
-        public void has_Mistery()
+        public void has_Mystery()
         {
-	        //Check if save has enabled mistery gift
+	        //Check if save has enabled mystery gift
 	        byte[] check = new byte[1];
 	        switch (game)
 	        {
 	            case 0://Not that it has wondercards...but let's see the code for it
 	        		check = getDataFromBlock(0x3A9, 1, 2);
 	        		if ( (check[0]&0x10) == 0)
-	                  	has_mistery_event = false;
+	                  	has_mystery_event = false;
 	                else
-	                	has_mistery_event = true;
+	                	has_mystery_event = true;
 	                break;
 
 	            case 1: //Emerald
 	                check = getDataFromBlock(0x405, 1, 2);
 	                if ( (check[0]&0x10) == 0)
-	                  	has_mistery_event = false;
+	                  	has_mystery_event = false;
 	                else
-	                	has_mistery_event = true;
+	                	has_mystery_event = true;
 
 	                check = getDataFromBlock(0x40B, 1, 2);
 	                if ( (check[0]&0x8) == 0)
-	                  	has_mistery_gift = false;
+	                  	has_mystery_gift = false;
 	                else
-	                	has_mistery_gift = true;
+	                	has_mystery_gift = true;
 	                break;
 	            case 2: //FRLG
 	                check = getDataFromBlock(0x67, 1, 2);
 	                if ( (check[0]&0x2) == 0)
-	                  	has_mistery_gift = false;
+	                  	has_mystery_gift = false;
 	                else
-	                	has_mistery_gift = true;
+	                	has_mystery_gift = true;
 	                break;
 	        }
         }
-        public void enable_Mistery() //TO DO: emerald mistery event on non-jap?
+        public void enable_Mystery() //TO DO: emerald mystery event on non-jap?
         {
-	        //Check if save has enabled mistery gift
+	        //Check if save has enabled mystery gift
 	        byte[] check = new byte[1];
 	        switch (game)
 	        {
@@ -528,7 +528,7 @@ namespace WC3_TOOL
 	                break;
 
 	            case 1: //Emerald
-	                if (isjap == true) // Mistery event. Save gets deleted if enabled in EUR/USA version
+	                if (isjap == true) // Mystery event. Save gets deleted if enabled in EUR/USA version
 	                {
 		                check = getDataFromBlock(0x405, 1, 2);
 		        		if ( (check[0]&0x10) == 0){
@@ -551,7 +551,7 @@ namespace WC3_TOOL
 	        		}
 	                break;
 	        }
-	        has_Mistery();
+	        has_Mystery();
         }
         public byte[] get_WC3()
         {
@@ -879,16 +879,16 @@ namespace WC3_TOOL
 		}
         public bool has_EggEvent_Flag()
         {
-	        //Check if save has enabled mistery gift
+	        //Check if save has enabled mystery gift
 	        byte[] check = new byte[1];
 	        switch (game)
 	        {
 	           /* case 0://Not that it has wondercards...but let's see the code for it
 	        		check = getDataFromBlock(0x3A9, 1, 2);
 	        		if ( (check[0]&0x10) == 0)
-	                  	has_mistery_event = false;
+	                  	has_mystery_event = false;
 	                else
-	                	has_mistery_event = true;
+	                	has_mystery_event = true;
 	                break;
 */
 	            case 1: //Emerald
@@ -910,7 +910,7 @@ namespace WC3_TOOL
         }
         public void clear_EggEvent_Flag()
         {
-	        //Check if save has enabled mistery gift
+	        //Check if save has enabled mystery gift
 	        byte[] check = new byte[1];
 	        switch (game)
 	        {
@@ -936,7 +936,7 @@ namespace WC3_TOOL
         }
         public void set_Enigma_Flag()
         {
-	        //Check if save has enabled mistery gift
+	        //Check if save has enabled mystery gift
 	        byte[] check = new byte[1];
 	        switch (game)
 	        {

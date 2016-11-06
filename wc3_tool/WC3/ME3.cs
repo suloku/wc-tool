@@ -67,7 +67,7 @@ namespace WC3_TOOL
         		isemerald = 1;
         		return isemerald;
         	}else{
-				DialogResult dialogResult = MessageBox.Show("ME3 file script has wrong checksum. Is this a Ruby/Sapphire mistery event?", "Wrong checksum", MessageBoxButtons.YesNo);
+				DialogResult dialogResult = MessageBox.Show("ME3 file script has wrong checksum. Is this a Ruby/Sapphire mystery event?", "Wrong checksum", MessageBoxButtons.YesNo);
 				if(dialogResult == DialogResult.Yes)
 				{
 					isemerald = 0;
