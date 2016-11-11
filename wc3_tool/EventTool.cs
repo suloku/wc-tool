@@ -368,7 +368,7 @@ namespace WC3_TOOL
 					usa_eon_ecard.Enabled = false;
 					usa_eon_italy.Enabled = false;
 					usa_aurora.Enabled = true;
-					usa_mystic.Enabled = false;
+					usa_mystic.Enabled = true;
 					eur_eon.Enabled = false;
 					eur_aurora.Enabled = true;
 					break;
@@ -635,7 +635,7 @@ namespace WC3_TOOL
 								MessageBox.Show("Please enable Mystery Gift in the savefile.");
 							}
 
-						}/*
+						}
 						else if (game_box.SelectedIndex == 2) //FRLG
 						{
 
@@ -650,7 +650,7 @@ namespace WC3_TOOL
 							{
 								MessageBox.Show("Please enable Mystery Gift in the savefile.");
 							}
-						}*/
+						}
 
 					}
 					break;

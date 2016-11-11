@@ -239,7 +239,7 @@ namespace WC3_TOOL
 			// 
 			this.enableMysteryGiftMainScreenStripMenuItem.Enabled = false;
 			this.enableMysteryGiftMainScreenStripMenuItem.Name = "enableMysteryGiftMainScreenStripMenuItem";
-			this.enableMysteryGiftMainScreenStripMenuItem.Size = new System.Drawing.Size(207, 22);
+			this.enableMysteryGiftMainScreenStripMenuItem.Size = new System.Drawing.Size(210, 22);
 			this.enableMysteryGiftMainScreenStripMenuItem.Text = "Enable Mystery Gift/Event";
 			this.enableMysteryGiftMainScreenStripMenuItem.Click += new System.EventHandler(this.EnableMysteryGiftMainScreenStripMenuItemClick);
 			// 
@@ -247,7 +247,7 @@ namespace WC3_TOOL
 			// 
 			this.clearEggEventFlagToolStripMenuItem.Enabled = false;
 			this.clearEggEventFlagToolStripMenuItem.Name = "clearEggEventFlagToolStripMenuItem";
-			this.clearEggEventFlagToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+			this.clearEggEventFlagToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
 			this.clearEggEventFlagToolStripMenuItem.Text = "Clear Egg Event Flag";
 			this.clearEggEventFlagToolStripMenuItem.Click += new System.EventHandler(this.ClearEggEventFlagToolStripMenuItemClick);
 			// 
@@ -553,7 +553,7 @@ namespace WC3_TOOL
 			this.Controls.Add(this.load_save_but);
 			this.Controls.Add(this.menuStrip1);
 			this.Name = "MainScreen";
-			this.Text = "Mystery Gift Tool 0.1c by suloku";
+			this.Text = "Mystery Gift Tool 0.1d by suloku";
 			this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainScreenDragDrop);
 			this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainScreenDragEnter);
 			this.menuStrip1.ResumeLayout(false);

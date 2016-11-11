@@ -2456,7 +2456,6 @@ namespace WC3_TOOL
 			// 
 			// tv_mix_tid
 			// 
-			this.tv_mix_tid.Hexadecimal = true;
 			this.tv_mix_tid.Location = new System.Drawing.Point(114, 120);
 			this.tv_mix_tid.Maximum = new decimal(new int[] {
 			65535,
@@ -4652,7 +4651,7 @@ namespace WC3_TOOL
 			// label32
 			// 
 			this.label32.ForeColor = System.Drawing.Color.Red;
-			this.label32.Location = new System.Drawing.Point(-2, 523);
+			this.label32.Location = new System.Drawing.Point(0, 523);
 			this.label32.Name = "label32";
 			this.label32.Size = new System.Drawing.Size(242, 23);
 			this.label32.TabIndex = 12;

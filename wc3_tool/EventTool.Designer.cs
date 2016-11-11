@@ -35,7 +35,6 @@ namespace WC3_TOOL
 		private System.Windows.Forms.RadioButton eur_eon;
 		private System.Windows.Forms.RadioButton eur_aurora;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
@@ -83,7 +82,6 @@ namespace WC3_TOOL
 			this.eur_eon = new System.Windows.Forms.RadioButton();
 			this.eur_aurora = new System.Windows.Forms.RadioButton();
 			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
@@ -257,7 +255,7 @@ namespace WC3_TOOL
 			this.usa_mystic.Size = new System.Drawing.Size(170, 24);
 			this.usa_mystic.TabIndex = 31;
 			this.usa_mystic.TabStop = true;
-			this.usa_mystic.Text = "Mystic Ticket (E)";
+			this.usa_mystic.Text = "Mystic Ticket (FR/LG/E)";
 			this.usa_mystic.UseVisualStyleBackColor = true;
 			// 
 			// usa_aurora
@@ -320,17 +318,9 @@ namespace WC3_TOOL
 			this.label1.TabIndex = 35;
 			this.label1.Text = "Note: The following events are still missing:";
 			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(33, 236);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(273, 23);
-			this.label2.TabIndex = 36;
-			this.label2.Text = "- \"MYSTIC TICKET\" (US/English) (FR/LG and E)";
-			// 
 			// label3
 			// 
-			this.label3.Location = new System.Drawing.Point(33, 251);
+			this.label3.Location = new System.Drawing.Point(33, 236);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(494, 18);
 			this.label3.TabIndex = 37;
@@ -338,7 +328,7 @@ namespace WC3_TOOL
 			// 
 			// label4
 			// 
-			this.label4.Location = new System.Drawing.Point(33, 267);
+			this.label4.Location = new System.Drawing.Point(33, 252);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(444, 23);
 			this.label4.TabIndex = 38;
@@ -346,7 +336,7 @@ namespace WC3_TOOL
 			// 
 			// label5
 			// 
-			this.label5.Location = new System.Drawing.Point(33, 282);
+			this.label5.Location = new System.Drawing.Point(33, 267);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(421, 23);
 			this.label5.TabIndex = 39;
@@ -354,7 +344,7 @@ namespace WC3_TOOL
 			// 
 			// label6
 			// 
-			this.label6.Location = new System.Drawing.Point(13, 304);
+			this.label6.Location = new System.Drawing.Point(13, 289);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(552, 31);
 			this.label6.TabIndex = 40;
@@ -367,12 +357,11 @@ namespace WC3_TOOL
 			this.AllowDrop = true;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(610, 340);
+			this.ClientSize = new System.Drawing.Size(610, 322);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.EUR_group);
 			this.Controls.Add(this.USA_group);
@@ -385,7 +374,7 @@ namespace WC3_TOOL
 			this.Controls.Add(this.sav3_path);
 			this.Controls.Add(this.load_save_but);
 			this.Name = "EventTool";
-			this.Text = "Gen3 Event Tool 0.1c by suloku";
+			this.Text = "Gen3 Event Tool 0.1d by suloku";
 			this.DragDrop += new System.Windows.Forms.DragEventHandler(this.EventToolDragDrop);
 			this.DragEnter += new System.Windows.Forms.DragEventHandler(this.EventToolDragEnter);
 			this.JAP_group.ResumeLayout(false);
